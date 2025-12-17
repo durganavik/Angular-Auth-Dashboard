@@ -1,6 +1,13 @@
-p{
-    text-align: center;
-    background-color: aqua;
-    font-size: 20px;
-   
+.user-card {
+  display: block;
+  padding: 15px;
+  margin: 10px 0;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+}
+.user-card:hover {
+  background: #e0e0e0;
 }

@@ -1,18 +1,21 @@
-<!-- home.html -->
-<div style="text-align: center; margin-top: 50px;">
-  <h1>Welcome to Dashboard! 🚀</h1>
-  <p>Angular seekhna shuru ho gaya hai.</p>
+<h1>User List (Dynamic Routing Demo)</h1>
+<p>Kisi bhi user pe click karo:</p>
 
-  <div style="border: 1px solid #ccc; padding: 20px; display: inline-block; border-radius: 10px;">
-    <h2>Counter: {{ counter }}</h2>
-    
-    <!-- (click) event se function call hoga -->
-    <button (click)="increaseCount()" style="padding: 10px 20px; margin: 5px; cursor: pointer;">
-      ➕ Badhao
-    </button>
-    
-    <button (click)="resetCount()" style="padding: 10px 20px; margin: 5px; cursor: pointer; background: red; color: white;">
-      ❌ Reset
-    </button>
-  </div>
+<div class="user-list">
+  <!-- Notice karo routerLink kaise banaya hai -->
+  
+  <!-- User 1 -->
+  <a [routerLink]="['/user', 1]" class="user-card">
+    <h3>👤 Amit (ID: 1)</h3>
+  </a>
+
+  <!-- User 2 -->
+  <a [routerLink]="['/user', 2]" class="user-card">
+    <h3>👤 Rahul (ID: 2)</h3>
+  </a>
+
+  <!-- User 3 -->
+  <a [routerLink]="['/user', 99]" class="user-card">
+    <h3>👤 Pooja (ID: 99)</h3>
+  </a>
 </div>

@@ -1,24 +1,15 @@
 import { Component } from '@angular/core';
+// 👇 1. Ye import line add karo
+import { RouterLink } from '@angular/router'; 
 
 @Component({
-   standalone: true,
   selector: 'app-home',
-  imports: [],
+  standalone: true,
+  // 👇 2. Is 'imports' array mein 'RouterLink' daal do
+  imports: [RouterLink], 
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrl: './home.css'
 })
 export class Home {
-   // Ye variable HTML mein dikhega
-  counter = 0;
-
-  // Ye function button dabane pe chalega
-  increaseCount() {
-    this.counter++;
-  }
-  
-  resetCount() {
-    this.counter = 0;
-  }
+  // ... tumhara code
 }
-
-

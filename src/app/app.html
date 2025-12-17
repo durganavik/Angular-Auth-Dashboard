@@ -1,14 +1,13 @@
-<!-- app.html -->
 <nav class="navbar">
-  <div class="logo">My Angular App</div>
+  <div class="logo">My App</div>
   <div class="nav-links">
-    <!-- routerLinkActive="active" ka matlab: Jo page khula hai, wo button alag color ka dikhega -->
     <a routerLink="/home" routerLinkActive="active-link">Home</a>
     <a routerLink="/about" routerLinkActive="active-link">About</a>
+    <a routerLink="/login" routerLinkActive="active-link">Login</a>
+    <a routerLink="/register" routerLinkActive="active-link">Register</a>
   </div>
 </nav>
 
 <div class="container">
-  <!-- Yahan tumhara Home/About load hoga -->
   <router-outlet></router-outlet>
 </div>
