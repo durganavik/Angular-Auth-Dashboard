@@ -1,0 +1,18 @@
+<!-- home.html -->
+<div style="text-align: center; margin-top: 50px;">
+  <h1>Welcome to Dashboard! 🚀</h1>
+  <p>Angular seekhna shuru ho gaya hai.</p>
+
+  <div style="border: 1px solid #ccc; padding: 20px; display: inline-block; border-radius: 10px;">
+    <h2>Counter: {{ counter }}</h2>
+    
+    <!-- (click) event se function call hoga -->
+    <button (click)="increaseCount()" style="padding: 10px 20px; margin: 5px; cursor: pointer;">
+      ➕ Badhao
+    </button>
+    
+    <button (click)="resetCount()" style="padding: 10px 20px; margin: 5px; cursor: pointer; background: red; color: white;">
+      ❌ Reset
+    </button>
+  </div>
+</div>
